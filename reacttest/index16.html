@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>salt-demo</title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+        <meta http-equiv="cleartype" content="on">
+    <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.js"></script>
+    <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+    <script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+        
+         
+    </head>
+    <body class="zh-cn">
+        <div id="App"></div> 
+        <!-- 项目脚本资源加载 -->
+        <script type="text/babel">
+        	var Test = React.createClass({
+        		
+        		handleClick:function(){
+        			this.refs.mytest.focus();
+        		},
+        		render:function(){
+        			return (
+	        			<div>
+	        				<input type="text" ref="mytest"/>
+	        				<input type="button" onClick={this.handleClick} value="点我获得焦点"/>
+	        			</div>
+        			)
+        		}
+        		
+        	});
+        	
+        	ReactDOM.render(
+        		<Test/>,
+        		document.getElementById("App")
+        		
+        		
+        	)
+        	
+        </script>
+       
+    </body>
+</html>
